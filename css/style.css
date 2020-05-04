@@ -1,0 +1,14 @@
+.regular {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: normal;
+}
+
+.norm {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+}
+
+.bold {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: bold;
+}

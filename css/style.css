@@ -20,6 +20,14 @@
     justify-content: space-between;
 }
 
+.container-content--cards {
+    max-width: 1332px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* header-page */
 .header-page {
     padding-top: 13px;
@@ -176,13 +184,137 @@
     opacity: .9;
 }
 
+/* project-cards */
+.project-cards {
+    padding: 18px 5px 15px;
+}
+
+.project-card {
+    border-radius: 3px;
+    max-width: calc(33.3% - 18px);
+    width: 100%;
+    margin-bottom: 27px;
+    box-shadow: 0 0 15px #E5E5E5;
+}
+
+.project-card .project-card__img {
+    width: 100%;
+}
+
+.project-card .wrapper-content {
+    margin: 38px 25px 30px;
+}
+
+.project-card .project-card__title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #081531;
+}
+
+.project-card .project-card__text {
+    margin-top: 30px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 156.7%;
+    color: #3E434F;
+}
+
+.company {
+    margin-top: 28px;
+    display: flex;
+}
+
+.company--card-2, .company--card-5 {
+    margin-top: 56px;
+}
+
+.company .description {
+    margin-left: 13px;
+}
+
+.company .description span {
+    display: block;
+}
+
+.company .description .description__title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #081531;
+}
+
+.company .description .description__geolocation {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #969696;
+}
+
+.project-card .progress-bar {
+    margin: 25px auto 28px;
+    position: relative;
+}
+
+.project-card .progress-bar .progress-bar__track {
+    max-width: 373px;
+    height: 8px;
+    background: #D2D2D2;
+    border-radius: 10px;
+}
+
+.project-card .progress-bar .progress-bar__progress {
+    height: 8px;
+    max-width: 323px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    background-color: #4640DE;
+}
+
+.project-card--2 .progress-bar--card-2 .progress-bar__progress, .project-card--5 .progress-bar--card-5 .progress-bar__progress {
+    width: 28px;
+}
 
 
 
+.project-card .bottom-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
 
+.project-card .bottom-content span {
+    display: block;
+}
 
+.bottom-content .price .price__name, .bottom-content .validity .validity__title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 137.7%;
+    color: #969696;
+}
 
-
+.bottom-content .price .prices__price, .bottom-content .validity__date {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 137.7%;
+    color: #081531;
+}
 
 
 

@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container-content--search {
@@ -101,7 +102,98 @@
     cursor: pointer;
 }
 
-/* search-bar */
+.user-panel {
+    display: none;
+    width: 276px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    position: absolute;
+    top: 78px;
+    right: 0;
+}
+
+.user-panel--active {
+    display: block;
+}
+
+.user-panel .user-panel__header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.user-panel .user-panel__text {
+    font-family: 'SF Pro Display', sans-serif;
+    color: #081531;
+    display: block;
+}
+
+.user-panel .user-panel__header .user-panel__text--name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.user-panel .user-panel__header .user-panel__text--email {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 6px;
+}
+
+.user-panel .user-panel__body {
+    padding: 21px 25px 40px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.user-panel .user-panel__body .user-panel__text--projects {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.user-panel .user-panel__body .user-panel__text--projects span {
+    position: absolute;
+    right: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4640DE
+}
+
+.user-panel .user-panel__body .user-panel__text--settings {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 22px;
+}
+
+.user-panel .user-panel__footer .user-panel__btn {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    width: 100%;
+    border: none;
+    background-color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #4640DE;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+
+    /* search-bar */
 .search {
     max-width: 575px;
     width: 100%;

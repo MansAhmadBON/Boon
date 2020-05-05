@@ -811,6 +811,17 @@
         top: 16px;
         box-shadow: 0 10px 10px 4px #E5E5E5;
     }
+    .select-body--active::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .select-body--active::-webkit-scrollbar-thumb {
+        background: #E3E3E3;
+        border-radius: 5px;
+        max-width: 8px;
+        height: 88px;
+
+    }
     .select-body--active {
         display: block;
     }
@@ -830,7 +841,13 @@
         font-size: 14px;
         line-height: 17px;
         color: #171F2E;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
     }
+    .select-body .select-categories__item .item-text:hover {
+        color: #4640DE;
+    }
+
     .select-body .select-categories__item .item-counter {
         font-family: 'SF Pro Display', sans-serif;
         font-style: normal;

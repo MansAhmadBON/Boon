@@ -12,7 +12,7 @@
 }
 
 .container-content--search {
-    margin-top: 20px;
+    margin-top: 100px;
     padding-top: 11px;
     padding-bottom: 13px;
     border-bottom: 1px solid #EAEAEA;
@@ -33,11 +33,23 @@
     display: none;
 }
 
+.header-mob {
+    transition: all .3s;
+    overflow: hidden;
+}
+
 /* header-page */
 .header-page {
     padding-top: 13px;
     box-shadow: 0 2px 10px 5px #E5E5E5;
     padding-bottom: 13px;
+    height: 78px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
 }
 
 .logo-box__link {
@@ -192,6 +204,11 @@
     color: #4640DE;
     font-family: 'SF Pro Display', sans-serif;
 }
+
+
+/* HEADER-MOB */
+
+
 
 
     /* search-bar */
@@ -513,8 +530,105 @@
 
 
 
+/* menu-content (MOBILE-HEADER) */
+.menu-content {
+    max-width: 339px;
+    margin: 0 auto;
+    padding-top: 14px;
+}
 
+.menu-content .menu-content__text {
+    font-family: 'SF Pro Display', sans-serif;
+    color: #081531;
+}
 
+.menu-content .menu-content__user .menu-content__text--name {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.menu-content .menu-content__user .menu-content__text--email {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 6px;
+}
+
+.menu-content .menu-content__settings {
+    padding-top: 26px;
+}
+
+.menu-content .menu-content__settings .menu-content__text {
+    display: block;
+}
+
+.menu-content .menu-content__settings .menu-content__text--projects {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    position: relative;
+}
+
+.menu-content .menu-content__settings .menu-content__text--projects span{
+    position: absolute;
+    right: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4640DE;
+}
+
+.menu-content .menu-content__settings .menu-content__text--settings {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.navigation-mobile {
+    margin-top: 52px;
+    height: 165px;
+}
+
+.navigation-mobile .navigation-mobile__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation-mobile .navigation-mobile__list .navigation-mobile__link {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #081531;
+    text-decoration: none;
+}
+
+.menu-content .menu-content__footer {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.menu-content .menu-content__footer button {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #4640DE;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+}
 
 
 @media (max-width: 1000px) {
@@ -543,6 +657,17 @@
     .header-mob {
         display: block;
         box-shadow: 0 2px 10px 5px #E5E5E5;
+        height: 67px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #fff;
+    }
+    .header-mob--active {
+        height: 497px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     }
     .container-content--header {
         max-width: 339px;
@@ -562,6 +687,11 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        position: relative;
+        transition: all .2s;
+    }
+    .menu-ctrl:hover {
+        width: 24px;
     }
     .menu-ctrl .menu-ctrl__line {
         height: 3px;
@@ -569,11 +699,23 @@
         border-radius: 2px;
     }
 
+    .menu-ctrl--open .menu-ctrl__line {
+        width: 24px;
+        position: absolute;
+        top: 50%;
+    }
+    .menu-ctrl--open .menu-ctrl__line--1 {
+        transform: rotate(45deg);
+    }
+    .menu-ctrl--open .menu-ctrl__line--2 {
+        transform: rotate(-45deg);
+    }
+
 
     .container-content--search {
         border: 0;
         flex-direction: column;
-        padding-top: 18px;
+        padding-top: 85px;
     }
     .ctrls {
         margin-top: 16px;

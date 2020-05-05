@@ -2,6 +2,8 @@
     max-width: 1332px;
     width: 100%;
     margin: 0 auto;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .container-content--header {
@@ -112,6 +114,11 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.personal-page:hover {
+    box-shadow: 0 0 15px #E5E5E5;
 }
 
 .user-panel {
@@ -190,6 +197,15 @@
     margin-top: 22px;
 }
 
+.user-panel__text a{
+    color: #081531;
+    text-decoration: none;
+    transition: color .3s;
+}
+.user-panel__text a:hover {
+    color: #4640DE
+}
+
 .user-panel .user-panel__footer .user-panel__btn {
     padding-top: 15px;
     padding-bottom: 13px;
@@ -203,6 +219,10 @@
     letter-spacing: -0.03em;
     color: #4640DE;
     font-family: 'SF Pro Display', sans-serif;
+    transition: background-color .2s;
+}
+.user-panel .user-panel__footer .user-panel__btn:hover {
+    background-color: #b3d4fc;
 }
 
 
@@ -268,6 +288,9 @@
     background-position-x: 77%;
     background-position-y: center;
 }
+.search .search__btn:hover {
+    box-shadow: 0 0 15px #E5E5E5;
+}
 
 .ctrls {
     max-width: 233px;
@@ -287,16 +310,18 @@
     line-height: 19px;
     letter-spacing: -0.03em;
     color: #646464;
-    transition: opacity .3s;
+    transition: all .3s;
+}
+
+.ctrls button:hover {
+    color: #4640DE;
+    opacity: .85;
 }
 
 .ctrls .ctrls__btn--active {
     color: #4640DE;
 }
 
-.ctrls button:hover {
-    opacity: .9;
-}
 
 
 
@@ -572,6 +597,16 @@
     position: relative;
 }
 
+.menu-content__text a {
+    color: #081531;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.menu-content__text a:hover {
+    color: #4640DE;
+}
+
 .menu-content .menu-content__settings .menu-content__text--projects span{
     position: absolute;
     right: 0;
@@ -610,6 +645,12 @@
     line-height: 18px;
     color: #081531;
     text-decoration: none;
+    transition: all .3s;
+}
+
+.navigation-mobile .navigation-mobile__list .navigation-mobile__link:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #081531;
 }
 
 .menu-content .menu-content__footer {
@@ -641,6 +682,10 @@
     }
 }
 @media (max-width: 807px) {
+    .container-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .navigation {
         padding-left: 30px;
     }
@@ -746,9 +791,16 @@
         height: 49px;
         padding: 16px 13px 13px 18px;
     }
+
     .select-ctrls .select-bar__item .select-ctrls__ico {
         position: relative;
         top: -3px;
+    }
+    .select-ctrls .select-bar__item--Comutity .select-ctrls__ico{
+        top: -2px;
+    }
+    .select-ctrls .select-bar__item--Creative .select-ctrls__ico{
+        top: -2px;
     }
     .select-ctrls .select-bar__item .select-ctrls__title {
         font-family: 'SF Pro Display', sans-serif;
@@ -782,6 +834,7 @@
 
     .select-categories .select-header {
         position: relative;
+        cursor: pointer;
     }
 
     .select-categories .select-header .select-header__default-value{
@@ -863,11 +916,38 @@
     .project-card {
         max-width: 100%;
     }
+    .project-card--1 {
+        order: 2
+    }
+    .project-card--2 {
+        order: 3
+    }
+    .project-card--3 {
+        order: 4
+    }
+    .project-card--4 {
+        order: 1
+    }
+    .project-card--5 {
+        order: 5
+    }
+    .project-card--6 {
+        order: 6
+    }
     .project-card .project-card__text {
-        height: 76px;
+        height: 82px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
     .project-card .bottom-content {
         flex-direction: row;
     }
 
+}
+
+@media (max-width: 334px){
+    .select-ctrls .select-bar__item--business {
+        margin-top: 25px;
+    }
 }

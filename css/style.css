@@ -1,5 +1,5 @@
 .container-content {
-    max-width: 1207px;
+    max-width: 1332px;
     width: 100%;
     margin: 0 auto;
 }
@@ -19,10 +19,10 @@
     border-top: 1px solid #EAEAEA;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .container-content--cards {
-    max-width: 1332px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +280,106 @@
     opacity: .9;
 }
 
-/* project-cards */
+
+
+
+.filters-panel {
+    display: none;
+    position: absolute;
+    top: 60px;
+    max-width: 1332px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px #E5E5E5;
+    padding: 26px 23px 32px;
+    z-index: 999;
+}
+
+.filters-panel--active {
+    display: block;
+}
+
+.filters-panel .filters-panel__header .filters-panel__title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: #081531
+}
+
+.filters-panel .filters-panel__body {
+    padding-top: 5px;
+}
+
+.filters-panel .filters-panel__body .filters-panel__btn {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #081531;
+    padding: 15px 18px 14px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-right: 10px;
+    transition: all .2s;
+}
+
+.filters-panel .filters-panel__body .filters-panel__btn--Memorial {
+    padding: 15px 15px 14px;
+}
+
+.filters-panel .filters-panel__body .filters-panel__btn img{
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.filters-panel .filters-panel__body .filters-panel__btn--active {
+    border: 1px solid #4640DE;
+    box-sizing: border-box;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    color: #4640DE;
+}
+
+.filters-panel .filters-panel__body .filters-panel__btn:hover {
+    border: 1px solid #4640DE;
+}
+.filters-panel .filters-panel__body .filters-panel__btn:active {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
+}
+
+
+
+.filters-panel .filters-panel__footer {
+    padding-top: 36px;
+    text-align: right;
+}
+
+.filters-panel .filters-panel__footer .filters-panel__btn {
+    background: #4640DE;
+    border-radius: 4px;
+    border: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    padding: 10px 45px;
+}
+
+
+
+
+    /* project-cards */
 .project-cards {
     padding: 18px 5px 15px;
 }

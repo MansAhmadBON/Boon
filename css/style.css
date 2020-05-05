@@ -111,6 +111,7 @@
     position: absolute;
     top: 78px;
     right: 0;
+    z-index: 999;
 }
 
 .user-panel--active {

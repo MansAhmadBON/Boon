@@ -1,0 +1,1 @@
+Сompleted test task on the [gh page](https://mansahmadbon.github.io/Boon/)

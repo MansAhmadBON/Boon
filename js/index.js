@@ -8,7 +8,7 @@ window.onload = function () {
     const $filterValueBtn = document.querySelectorAll('.filters-panel__btn');
     const $menuHeaderCtrl = document.querySelector('.menu-ctrl');
     const $headerMobile = document.querySelector('.header-mob');
-    const $selectShowOptions = document.querySelector('.select-header');
+    const $selectShowOptions = document.querySelector('.select-categories');
     const $optionsWrapper = document.querySelector('.select-body');
     const $ctrlsSearch = document.querySelector('.ctrls');
     const $ctrlsBtnSearch = document.querySelectorAll('.ctrls__btn');
@@ -16,14 +16,14 @@ window.onload = function () {
 
     function removeFilterActiveClass(){
         $filterValueBtn.forEach(btn => {
-            btn.classList.remove('filters-panel__btn--active')
-        })
+            btn.classList.remove('filters-panel__btn--active');
+        });
     }
 
     function removeSearchFilterActiveClass(){
         $ctrlsBtnSearch.forEach(btn => {
-            btn.classList.remove('ctrls__btn--active')
-        })
+            btn.classList.remove('ctrls__btn--active');
+        });
     }
 
 
@@ -38,8 +38,9 @@ window.onload = function () {
     });
 
     //select
-    $selectShowOptions.addEventListener('click', function () {
+     $selectShowOptions.addEventListener('click', function () {
         $optionsWrapper.classList.toggle('select-body--active');
+        $selectShowOptions.classList.toggle('select-categories--active');
     });
     $optionsWrapper.addEventListener('click', function (e) {
         if(e.target.className === 'item-text'){
